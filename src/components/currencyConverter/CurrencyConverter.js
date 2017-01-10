@@ -10,7 +10,6 @@ export default class CurrencyConverter extends React.Component{
 
 componentWillMount(){
     jsonp(`http://api.fixer.io/latest`, (err, data) => {
-        debugger;
         let i =0;
          const currency = [];
         for (let prop in data.rates){

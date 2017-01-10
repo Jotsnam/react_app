@@ -9,11 +9,13 @@ import Home from './components/Home';
 import Boxes from './components/boxes/Boxes';
 import Random from './components/random/Random';
 import CurrencyConverter from './components/currencyConverter/CurrencyConverter';
+import Movies from './components/movies/Movies';
 
 ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home}/> 
+      <Route path="Movies" component={Movies}/>
         <Route path="CurrencyConverter" component={CurrencyConverter}/>
         <Route path="Random" component={Random}/>
         <Route path="Boxes" component={Boxes}/>    
